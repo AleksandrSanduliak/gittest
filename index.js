@@ -33,6 +33,13 @@ max = Math.max(...arr)
 return [max, min].join(' ')
 }
 
+Find the odd int
+function findOdd(A) {
+for(let i = 0; i<A.length; i++){
+  const result = A.filter(val => val === A[i]).length
+  if(result  % 2 === 1) return A[i]
+}
+}
 
 
 
